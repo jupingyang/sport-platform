@@ -28,14 +28,14 @@ public class UserServiceImpl implements UserService {
         String password = user.getPassword();
 
         User us = userMapper.getUserByMessage(username, password);
-        HashMap<String, Object> res = new HashMap<>();
+        HashMap<String, Object> data = new HashMap<>();
         if(us != null){
             flag = "ok";
         }
-        res.put("flag",flag);
-        res.put("user",user);
+        data.put("flag",flag);
+        data.put("user",user);
 
-        String res_json = JSON.toJSONString(res);
-        return res_json;
+        String res = JSON.toJSONString(data);
+        return res;
     }
 }
