@@ -59,4 +59,26 @@ public class UserController {
         String res = userService.deleteUser(id);
         return res;
     }
+
+    /**
+     * 根據id查詢用戶資料
+     * @param id
+     * @return
+     */
+    @RequestMapping("/getUser")
+    public String getUserById(int id){
+        String res = userService.getUserById(id);
+        return res;
+    }
+
+    /**
+     * 更新用戶資料
+     * @param user
+     * @return
+     */
+    @RequestMapping("/updateUser")
+    public String updateUser(@RequestBody User user){
+        String res = userService.updateUser(user);
+        return res;
+    }
 }

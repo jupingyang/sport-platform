@@ -85,9 +85,37 @@ public class UserServiceImpl implements UserService {
         return i > 0 ? "success" : "error";
     }
 
+    /**
+     * 刪除用戶
+     * @param id
+     * @return
+     */
     @Override
     public String deleteUser(int id) {
         int i = userMapper.deleteUser(id);
         return i > 0 ? "success" : "error";
+    }
+
+    /**
+     * 根據id查詢用戶資料
+     * @param id
+     * @return
+     */
+    @Override
+    public String getUserById(int id) {
+        User user = userMapper.getUserById(id);
+        String res = JSON.toJSONString(user);
+        return res;
+    }
+
+    /**
+     * 更新用戶資料
+     * @param user
+     * @return
+     */
+    @Override
+    public String updateUser(User user) {
+        int i = userMapper.updateUser(user);
+        return i > 0? "success":"error";
     }
 }

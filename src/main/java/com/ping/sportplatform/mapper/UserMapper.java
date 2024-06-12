@@ -57,4 +57,20 @@ public interface UserMapper {
      */
     @Delete("DELETE FROM `user` WHERE id = #{id}")
     int deleteUser(int id);
+
+    /**
+     * 根據id獲取用戶
+     * @param id
+     * @return
+     */
+    @Select("SELECT * FROM `user` WHERE id = #{id}")
+    User getUserById(int id);
+
+    /**
+     * 更新用戶資料
+     * @param user
+     * @return
+     */
+    @Update("UPDATE `user` SET username = #{username}, password = #{password}, email = #{email}, role = #{role} WHERE id = #{id}")
+    int updateUser(User user);
 }

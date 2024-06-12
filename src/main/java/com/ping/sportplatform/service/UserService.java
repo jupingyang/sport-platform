@@ -43,6 +43,23 @@ public interface UserService {
      */
     String deleteUser(int id);
 
+    /**
+     * 根據id查詢用戶資料
+     * @param id
+     * @return
+     */
+    String getUserById(int id);
+
+    /**
+     * 更新用戶資料
+     * @param user
+     * @return
+     */
+    String updateUser(User user);
+
+
+
+
 
 
 
