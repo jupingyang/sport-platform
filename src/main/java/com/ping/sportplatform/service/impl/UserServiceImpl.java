@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
         User us = userMapper.getUserByMessage(username, password);
         HashMap<String, Object> data = new HashMap<>();
         if(us != null){
-            flag = "ok";
+            flag = "success";
         }
         data.put("flag",flag);
         data.put("user",user);
