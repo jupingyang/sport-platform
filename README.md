@@ -15,6 +15,9 @@
 * 後台管理系統使用 controller, service, mapper 三層架構來處理請求及響應
 * GCP：部署後端，建立 Cloud SQL 雲端資料庫
 
+### 前端專案連結
+https://github.com/jupingyang/sport-platform-vue
+
 ### 介面與功能
 #### 前台：
 * 註冊及登入會員
