@@ -6,7 +6,7 @@
  > 此專案為筆者參考 bilibili影片《个人健康平台》以 Spring Boot + Vue3 重構而成。
 
 ### 雲端部署
-* 前端部署於 Github Pages：https://jupingyang.github.io/sport-platform-vue/dist/
+* 前端部署於 GitHub Pages：https://jupingyang.github.io/sport-platform-vue/dist/
 * 後端部署於 GCP：https://still-lamp-428409-b4.de.r.appspot.com/menus ( 獲取所有菜單 )
 
 ### 後端使用技術
