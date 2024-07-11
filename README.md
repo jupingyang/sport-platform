@@ -13,6 +13,7 @@
 * Spring Boot：建立後端架構 
 * MySQL/MyBatis：使用 MySQL 資料庫，並透過 MyBatis 來調用數據  
 * 後台管理系統使用 controller, service, mapper 三層架構來處理請求及響應
+* 串接第三方API：取得卡路里及營養資訊
 * GCP：部署後端，建立 Cloud SQL 雲端資料庫
 
 ### 前端 Vue 專案連結
